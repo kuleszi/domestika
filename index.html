@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+     <title>Aleksandra Kulesza Portfolio</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+        <nav>
+         <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+        </nav>
+
+        <section id="about" class="about">
+            <div class="empty"></div>
+            <article>
+                <div class="title">
+                    <h1>Aleksandra Kulesza</h1>
+                 </div>
+                 <div class="description">
+                  <p>Hi! I have a long experience in Marketing working with creative teams, creating marketing campaigns, events, video, or photography productions, but now I want to change my field and start my career as a Front-end Developer. I am currently constantly working on my web design skills. I can code in HTML, CSS and JavaScript. Due to my marketing experience I am also very familliar with UX.</p>
+                 </div>
+             </article>
+        </section>
+
+        <section id="services" class="services services-html sticky">
+            <article>
+                <figure>
+                 <img src="img/diamond.png" width="200" />
+                </figure>
+                <div class="text">
+                 <h2>HTML</h2>
+                 <p>The HyperTextMarkup Language or HTML is a standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) or scripting languages such as JavaScript.</p>
+                 <a href="https://en.wikipedia.org/wiki/HTML">More about HTML</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="services services-css sticky">
+            <article>
+                <figure>
+                 <img src="img/triangle.png" width="200" />
+                </figure>
+                <div class="text">
+                 <h2>CSS</h2>
+                 <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of the document written in a markup language such as HTML. CSS is a cornerstone technology for World Wibe Web, alongside HTML and JavaScript.</p>
+                 <a href="https://en.wikipedia.org/wiki/CSS">More about CSS</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="services services-js sticky">
+            <article>
+                <figure>
+                 <img src="img/octagon.png" width="200" />
+                </figure>
+                <div class="text">
+                 <h2>JS</h2>
+                 <p>JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the WWW. As of 2022, 98% of website use JS on the client side for webpage behavior, often incorporating third-party libraries.</p>
+                 <a href="https://en.wikipedia.org/wiki/JavaScript">More about JS</a>
+               </div>
+            </article>
+        </section>
+
+        <section id="contact" class="contact full-screen">
+         <a href="mailto:aleksandrakulesza.96@gmail.com">aleksandrakulesza.96@gmail.com</a>
+        </section>
+
+        <script>
+
+            let emptyElement = document.querySelector('.about .empty');
+            let titleElement = document.querySelector('.about .title');
+            
+
+            window.addEventListener ( 'mousemove', handleMouseMove );
+
+            function handleMouseMove( event ) {
+                emptyElement.style.flexBasis = event.clientX + 'px';
+                titleElement.style.flexBasis = event.clientY / 2 + 'px';
+                
+            }
+        </script>
+
+    </body>
+</html>
